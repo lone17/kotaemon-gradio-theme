@@ -34,11 +34,10 @@ common = dict(
     color_accent="*primary_400",
     # shadows
     shadow_drop="0 0px 5px 1px rgb(0 0 0 / 0.05)",
-    shadow_drop_lg="0 0 10px 3px rgb(0 0 0 / 0.05)",
+    shadow_drop_lg="0 0 10px 3px rgba(0 0 0 / 0.06)",
     # layout atoms
     block_label_margin="*spacing_xl",
     block_label_padding="*spacing_xl",
-    block_shadow="*shadow_drop",
     block_label_shadow="none",
     layout_gap="*spacing_xxl",
     section_header_text_size="*text_lg",
@@ -48,6 +47,7 @@ common = dict(
     button_shadow_hover="none",
     # button_large_radius="*radius_xxl",
     # button_small_radius="*radius_xxl",
+    # -----
 )
 dark_mode = dict(
     # body attributes
@@ -58,12 +58,14 @@ dark_mode = dict(
     border_color_primary_dark="*neutral_600",
     color_accent_soft_dark="*secondary_400",
     # text
-    link_text_color_dark="*secondary_300",
-    link_text_color_visited_dark="*secondary_700",
+    link_text_color_dark="*secondary_200",
+    link_text_color_active_dark="*secondary_300",
+    link_text_color_visited_dark="*secondary_400",
     # layout atoms
     block_label_background_fill_dark="*neutral_800",
     block_label_border_width_dark="0px",
     block_label_text_color_dark="*primary_200",
+    block_shadow_dark="none",
     block_title_text_color_dark="*primary_200",
     panel_border_width_dark="0px",
     # component atoms
@@ -109,6 +111,7 @@ light_mode = dict(
     block_label_border_width="0px",
     block_label_background_fill="white",
     block_label_text_color="*primary_600",
+    block_shadow="none",
     block_title_text_color="*primary_600",
     panel_border_width="0px",
     # component atoms
@@ -140,7 +143,7 @@ light_mode = dict(
 )
 
 
-class Clean(Soft):
+class Kotaemon(Soft):
     def __init__(
         self,
         *,
@@ -171,6 +174,7 @@ class Clean(Soft):
             font=font,
             font_mono=font_mono,
         )
+        self.name = "kotaemon"
         super().set(
             **common,
             **dark_mode,

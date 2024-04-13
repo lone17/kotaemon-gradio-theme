@@ -2,7 +2,7 @@
 
 - Clean and minimal design.
 - Dark and light modes.
-- Additional CSS snippets for better customization.
+- Additional CSS snippets can be found at the [kotaemon repo](https://github.com/Cinnamon/kotaemon/blob/main/libs/ktem/ktem/assets/css/main.css).
 
 Preview the theme on Hugging Face Space:
 [lone17/kotaemon](https://huggingface.co/spaces/lone17/kotaemon)
